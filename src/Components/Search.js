@@ -28,7 +28,7 @@ const Search = (props) => {
 
     const onSubmitClick=()=>{
         console.log("Props=>",props);
-       props.callBack(searchT);
+       props.callBacks(searchT);
     }
     const classes = useStyles();
     return (
