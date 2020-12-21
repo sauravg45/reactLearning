@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
+
 const useStyles = makeStyles((theme) => ({
     root: {
         '& > *': {
@@ -21,9 +22,8 @@ const Search = (props) => {
     const [searchT, setSearchT] = useState('');
 
     const handleChange = (event) => {
-        //  console.log("From Search Bar=>",event.target.value);
         setSearchT(event.target.value);
-        console.log("Searchh=>", searchT);
+        console.log("Search => ", searchT);
     }
 
     const onSubmitClick=()=>{
@@ -44,9 +44,6 @@ const Search = (props) => {
                 >Search</Button>
             </form>
         </div>
-
-
-
     )
 }
 

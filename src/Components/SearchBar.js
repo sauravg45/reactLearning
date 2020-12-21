@@ -1,24 +1,24 @@
 import React from 'react';
-import Search from './Search'
+import Search from './Search';
+
 const SearchBar = () => {
-  const onCallBack = (value) => {
-    console.log("onCalBack=>", value);
+  function onCallBack() {
+    console.log("onCalBack=>");
   }
 
   const myStyle = {
-    display: "flex",
-    height:"300px",
-    "justify-content":"center",
-    "align-items":"center",
-};
+    "display": "flex",
+    "height": "300px",
+    "justify-content": "center",
+    "align-items": "center",
+  };
 
-console.log("from searchbar")
-return (
-
-  <div class="flex-container" style={myStyle}>
-    <Search callBacks={(value) => onCallBack(value)} />
-  </div>
-)
+  console.log("from searchbar")
+  return (
+    <div class="flex-container" style={myStyle}>
+      <Search callBacks={onCallBack} />
+    </div>
+  )
 }
 
 export default SearchBar;

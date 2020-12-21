@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Link,Switch,Route} from 'react-router-dom'
-import Search from './Components/Search';
+import SearchBar from './Components/SearchBar';
 function RouteFunct(){
   return(
     <div>
@@ -21,7 +21,7 @@ ReactDOM.render(
         <li><Link to="/search">Search</Link></li>
       </ul> */}
      
-      <Route path="/search" component={Search}></Route> 
+      <Route path="/search" component={SearchBar}></Route> 
       </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

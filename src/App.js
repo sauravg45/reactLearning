@@ -6,13 +6,13 @@ const App = () => {
   return (
     <div className="App">
        <h2>Welcome to App Component</h2>
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <ul>
         <li><Link to="/search">Search</Link></li>
       </ul>
      
       <Route path="/search" component={Search}></Route> 
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }
